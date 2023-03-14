@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#AED581"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Play"
+        android:textAllCaps="false"
+        android:textColor="#786767"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <TextView
+        android:id="@+id/tvRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Record:"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="99"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecord" />
+
+    <TextView
+        android:id="@+id/tvRulesTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Game Rules:"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay"
+        tools:layout_editor_absoluteX="140dp" />
+
+    <TextView
+        android:id="@+id/tvRules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="to whack more moles \nto exceed the best score"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvRulesTittle"
+        tools:layout_editor_absoluteX="80dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
