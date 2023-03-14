@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#AED581"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Play again"
+        android:textAllCaps="false"
+        android:textColor="#786767"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#AED581"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Menu"
+        android:textAllCaps="false"
+        android:textColor="#786767"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayAgain" />
+
+    <TextView
+        android:id="@+id/tvScoreTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Score:"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="173dp" />
+
+    <TextView
+        android:id="@+id/tvScoreResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="0"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvScoreTittle"
+        app:layout_constraintStart_toStartOf="@+id/tvScoreTittle"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreTittle" />
+
+    <TextView
+        android:id="@+id/tvBestScoreTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Best Score:"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvScoreResult"
+        app:layout_constraintStart_toStartOf="@+id/tvScoreResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreResult" />
+
+    <TextView
+        android:id="@+id/tvBesScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="99"
+        android:textColor="#594D4D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvBestScoreTittle"
+        app:layout_constraintStart_toStartOf="@+id/tvBestScoreTittle"
+        app:layout_constraintTop_toBottomOf="@+id/tvBestScoreTittle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
