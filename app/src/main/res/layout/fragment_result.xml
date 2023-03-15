@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#AED581"
         android:fontFamily="@font/courgette_regular"
@@ -19,23 +20,23 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="375dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvResultBestScore" />
 
     <Button
         android:id="@+id/btnMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#AED581"
         android:fontFamily="@font/courgette_regular"
         android:text="Menu"
         android:textAllCaps="false"
         android:textColor="#786767"
         android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlayAgain"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="@+id/btnPlayAgain"
         app:layout_constraintTop_toBottomOf="@+id/btnPlayAgain" />
 
     <TextView
@@ -45,11 +46,12 @@
         android:layout_marginTop="120dp"
         android:background="#EFDEDE"
         android:fontFamily="@font/courgette_regular"
-        android:text="Score:"
+        android:text="Score"
         android:textColor="#594D4D"
         android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="173dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvScoreResult"
@@ -72,7 +74,7 @@
         android:layout_marginTop="16dp"
         android:background="#EFDEDE"
         android:fontFamily="@font/courgette_regular"
-        android:text="Best Score:"
+        android:text="Record Score"
         android:textColor="#594D4D"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/tvScoreResult"
@@ -80,7 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvScoreResult" />
 
     <TextView
-        android:id="@+id/tvBesScore"
+        android:id="@+id/tvResultBestScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
