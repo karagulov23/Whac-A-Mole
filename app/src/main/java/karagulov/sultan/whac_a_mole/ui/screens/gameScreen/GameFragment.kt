@@ -80,7 +80,7 @@ class GameFragment : Fragment() {
                 frameLayout.layoutParams = params
                 frameLayout.setBackgroundResource(R.drawable.hole)
 
-                if (3 == randomRow && 3 == randomColumn) {
+                if (row == randomRow && column == randomColumn) {
                     imageView.setImageResource(R.drawable.mole)
                     imageView.setOnClickListener {
                         score++
