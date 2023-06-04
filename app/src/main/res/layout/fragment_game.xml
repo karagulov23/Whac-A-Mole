@@ -21,17 +21,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="64dp"
-            android:fontFamily="@font/courgette_regular"
-            android:text="Time"
-            android:textColor="#594D4D"
+            android:text="@string/time"
+            android:textColor="#30336b"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tvTimer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courgette_regular"
-            android:text="TimeToFinish"
+            android:text="@string/timetofinish"
+            android:textColor="#30336b"
             android:textSize="20sp" />
 
         <TextView
@@ -40,17 +39,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="64dp"
-            android:fontFamily="@font/courgette_regular"
-            android:text="Score"
-            android:textColor="#594D4D"
+            android:text="@string/score"
+            android:textColor="#30336b"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tvScore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courgette_regular"
             android:text="0"
+            android:textColor="#30336b"
             android:textSize="20sp" />
 
         <TextView
@@ -59,17 +57,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="64dp"
-            android:fontFamily="@font/courgette_regular"
-            android:text="Record Score"
-            android:textColor="#594D4D"
+            android:text="@string/record_score"
+            android:textColor="#30336b"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tvRecordScore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courgette_regular"
             android:text="0"
+            android:textColor="#30336b"
             android:textSize="20sp" />
 
     </LinearLayout>

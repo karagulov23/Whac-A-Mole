@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Поймай крота</string>
+    <string name="btn_play">Играть</string>
+    <string name="record">Рекорд</string>
+    <string name="game_rules">Правила игры</string>
+    <string name="rules">Поймайте как можно больше кротов\n за отведенное вам время</string>
+    <string name="play_again">Играть заново</string>
+    <string name="menu">Меню</string>
+    <string name="score">Очки</string>
+    <string name="record_score">Лучший результат</string>
+    <string name="time">Время</string>
+    <string name="timetofinish">Время до завершения</string>
+</resources>

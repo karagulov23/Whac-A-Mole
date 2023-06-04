@@ -25,7 +25,7 @@ class MenuFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         val sharedPreferences = activity?.getSharedPreferences("Record_Score", 0)
-        binding.tvBestScore.text = sharedPreferences?.getString("Record_Score", "-1")
+        binding.tvBestScore.text = sharedPreferences?.getString("Record_Score", "0")
 
         binding.btnPlay.setOnClickListener{
             findNavController().navigate(R.id.action_menuFragment_to_gameFragment)

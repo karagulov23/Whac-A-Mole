@@ -27,7 +27,7 @@ class ResultFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val sharedPreferences = activity?.getSharedPreferences(RECORD_SCORE, 0)
-        binding.tvResultBestScore.text = sharedPreferences?.getString(RECORD_SCORE, "-1")
+        binding.tvResultBestScore.text = sharedPreferences?.getString(RECORD_SCORE, "0")
         binding.tvScoreResult.text = sharedPreferences?.getString(LAST_SCORE, "-1")
 
     }

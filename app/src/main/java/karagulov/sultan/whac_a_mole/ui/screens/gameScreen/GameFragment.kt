@@ -1,5 +1,6 @@
 package karagulov.sultan.whac_a_mole.ui.screens.gameScreen
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.Gravity
@@ -27,6 +28,7 @@ class GameFragment : Fragment() {
     private lateinit var binding: FragmentGameBinding
     private lateinit var timer: CountDownTimer
     private lateinit var tableLayout: TableLayout
+    private lateinit var mediaPlayer: MediaPlayer
     private var score = 0
     private var recordScore = 0
     private val arrayImages: Array<Array<FrameLayout?>> = Array(COUNT_COLUMN) { arrayOfNulls(COUNT_ROW) }
@@ -62,8 +64,8 @@ class GameFragment : Fragment() {
 
         val sharedPreferences = activity?.getSharedPreferences("Record_Score", 0)
         binding.tvTimer.text = (timeToFinish / 1000).toString()
-        binding.tvRecordScore.text = sharedPreferences?.getString("Record_Score", "-1")
-        recordScore = sharedPreferences?.getString(RECORD_SCORE, "-1")?.toInt() ?: 0
+        binding.tvRecordScore.text = sharedPreferences?.getString("Record_Score", "0")
+        recordScore = sharedPreferences?.getString(RECORD_SCORE, "0")?.toInt() ?: 0
 
         val randomRow = Random.nextInt(COUNT_ROW)
         val randomColumn = Random.nextInt(COUNT_COLUMN)
@@ -89,10 +91,12 @@ class GameFragment : Fragment() {
                             val pref = sharedPreferences?.edit()
                             pref?.putString(RECORD_SCORE, score.toString())
                             pref?.apply()
-                            binding.tvRecordScore.text = sharedPreferences?.getString(RECORD_SCORE, "-1")
+                            binding.tvRecordScore.text = sharedPreferences?.getString(RECORD_SCORE, "0")
                         }
                         imageView.setImageResource(R.drawable.whack)
                         imageView.isEnabled = false
+                        mediaPlayer = MediaPlayer.create(requireContext(), R.raw.whack)
+                        mediaPlayer.start()
                     }
                 }
                 frameLayout.addView(imageView)
